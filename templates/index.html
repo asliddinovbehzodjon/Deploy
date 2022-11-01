@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Deploy Django</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<h1>Salom dunyo</h1>
+{% for image in images %}
+<img src="{{image.image_get}}" alt="">
+<p>{{image.title}}</p>
+{% endfor %}
+</body>
+</html>
